@@ -3,7 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
+  <div w-full h-full>
     <a href="https://ajiu9.cn/" target="_blank">
       <img src="./assets/logo.svg" class="logo vue" alt="ajiu9 logo" />
     </a>
