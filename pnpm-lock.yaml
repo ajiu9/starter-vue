@@ -21,7 +21,10 @@ importers:
       '@types/node':
         specifier: ^22.5.4
         version: 22.14.0
-      '@unocss/preset-wind3':
+      '@unocss/preset-icons':
+        specifier: 66.1.0-beta.10
+        version: 66.1.0-beta.10
+      '@unocss/preset-wind4':
         specifier: 66.1.0-beta.10
         version: 66.1.0-beta.10
       '@unocss/reset':

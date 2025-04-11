@@ -1,30 +1,27 @@
-import presetWind3 from '@unocss/preset-wind3'
-import { defineConfig, presetAttributify, presetIcons, transformerDirectives } from 'unocss'
+import presetIcons from '@unocss/preset-icons'
+import presetWind4 from '@unocss/preset-wind4'
+
+import { defineConfig, presetAttributify, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   shortcuts: [
-    {
-      'bg-base': 'bg-white dark:bg-black',
-      'border-base': 'border-[#8884]',
-    },
-    [/^btn-(\w+)$/, ([_, color]) => `op50 px2.5 py1 transition-all duration-200 ease-out no-underline! hover:(op100 text-${color} bg-${color}/10) border border-base! rounded`],
+    // {
+    //   'bg-base': 'bg-white dark:bg-black',
+    //   'border-base': 'border-[#8884]',
+    // },
+    // [/^btn-(\w+)$/, ([_, color]) => `op50 px2.5 py1 transition-all duration-200 ease-out no-underline! hover:(op100 text-${color} bg-${color}/10) border border-base! rounded`],
   ],
   rules: [
-    [/^slide-enter-(\d+)$/, ([_, n]) => ({
-      '--enter-stage': n,
-    })],
+    // [/^slide-enter-(\d+)$/, ([_, n]) => ({
+    //   '--enter-stage': n,
+    // })],
   ],
   presets: [
     presetIcons({
-      extraProperties: {
-        'display': 'inline-block',
-        'height': '1.2em',
-        'width': '1.2em',
-        'vertical-align': 'text-bottom',
-      },
+      scale: 1.2,
     }),
     presetAttributify(),
-    presetWind3(),
+    presetWind4(),
   ],
   transformers: [
     transformerDirectives(),

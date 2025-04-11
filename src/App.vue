@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import Style from './components/style.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="你好" />
+  <Style/>
 </template>
 
 <style scoped>
